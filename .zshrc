@@ -12,9 +12,12 @@ cat ~/.motd
 alias tailscale=/Applications/Tailscale.app/Contents/MacOS/Tailscale
 
 ## history bumps
-export HISTFILE="$HOME/.zsh_history"
+# if you leave it at the default location you also have to 
+# set /etc/zshrc, which is sure to be overwritten someday. BOO HISS &c.
+export HISTFILE="$HOME/.zsh_usurped_history"
 export HISTSIZE=655350
 export SAVEHIST=655350
+export HISTFILESIZE=655350
 setopt BANG_HIST                 # Treat the '!' character specially during expansion.
 setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed;command" format.
 setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.
