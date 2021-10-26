@@ -4,6 +4,8 @@ setopt noautomenu
 setopt nomenucomplete
 autoload -U select-word-style
 select-word-style bash
+# this one makes git autocompletion work, for some reason
+autoload -U compinit && compinit
 
 ## dragons are cool
 cat ~/.motd
@@ -23,8 +25,10 @@ setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed
 setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.
 setopt SHARE_HISTORY             # Share history between all sessions.
 
-export PATH=/Users/byron/bin:${PATH}
+# PATHS!
+# So I like ~/bin. Sue me
+export PATH="${PATH}:${HOME}/bin"
+export PATH="${PATH}:${HOME}/.rvm/bin"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
