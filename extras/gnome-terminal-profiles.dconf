@@ -1,0 +1,18 @@
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(0,0,0)'
+background-transparency-percent=21
+bold-color='rgb(226,255,252)'
+bold-color-same-as-fg=true
+cursor-shape='block'
+default-size-columns=160
+default-size-rows=80
+delete-binding='delete-sequence'
+font='Monospace 14'
+foreground-color='rgb(95,254,254)'
+highlight-colors-set=false
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(159,255,244)', 'rgb(137,254,224)', 'rgb(99,255,241)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(58,203,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='Byron'
