@@ -24,6 +24,7 @@ setopt BANG_HIST                 # Treat the '!' character specially during expa
 setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed;command" format.
 setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.
 setopt SHARE_HISTORY             # Share history between all sessions.
+setopt sh_word_split             # bash-like space separated for loops (c="a b c"; for d in $c; do; echo $d; done ## prints on one line in zsh by default but should be separate)
 
 # PATHS!
 # So I like ~/bin. Sue me
